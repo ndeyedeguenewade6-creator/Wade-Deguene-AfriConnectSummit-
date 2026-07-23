@@ -10,10 +10,17 @@
 <body>
     <header>
         <nav>
-            <!-- Logo -->
-            <a href="#">
-                <strong>AfriConnect Summit 2026</strong>
+                    <!-- logo -->
+            <div class="header-logo-container">
+            <a href="Index.html">
+                <img  class="my-custom-logo" src="image/logo.png" alt="logo"><strong>AfriConnect Summit 2026</strong>
             </a>
+            </div>
+            <button class="burger-menu" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul>
                 <li><a href="Index.html">Accueil</a></li>
                 <li><a href="Programme.html">programme</a></li>
@@ -22,78 +29,76 @@
             </ul>
         </nav>
     </header>
-
+        
     <main>
 
         <!-- section hero -->
-        <section id="accueil">
-            <h1>Le futur de l'innovation technologique en Afrique se dessine ici</h1>
-            
-            <p>
-                <strong>Lieu :</strong> Centre des Congrès de Dakar, Sénégal <br>
-                <strong>Dates :</strong> Du 15 au 17 octobre 2026
-            </p>
+<section id="accueil">
+    <h1>Le futur de l'innovation technologique en Afrique se dessine ici</h1>
+    <p>
+        <strong>Lieu :</strong> Centre Internationales de Conférences Abdou Diouf(C.I.C.A.D) Dakar, Sénégal <br>
+        <strong>Dates :</strong> Du 15 au 17 octobre 2026
+    </p>
+    <div class="hero-buttons">
+        <a href="Contact.html"><button type="button" class="btn-ticket">Réserver mon billet</button></a>
+        <a href="Programme.html"><button type="button" class="btn-programme">Voir le programme</button></a>
+    </div>
 
-            <!-- Boutons CTA -->
-            <div>
-                <a href="Contact.html"><button type="button">Réserver mon billet</button></a>
-                <a href="Programme.html"><button type="button">Voir le programme</button></a>
+    <div class="countdown-container">
+        <h3>Le sommet commence dans :</h3>
+        <div class="countdown-box">
+            <div class="countdown-item">
+                <span>00</span>
+                <p>Jours</p>
             </div>
-
-            <div>
-                <h3>Le sommet commence dans :</h3>
-                <div>
-                    <div>
-                        <span>00</span>
-                        <p>Jours</p>
-                    </div>
-                    <div>
-                        <span>00</span>
-                        <p>Heures</p>
-                    </div>
-                    <div>
-                        <span>00</span>
-                        <p>Minutes</p>
-                    </div>
-                    <div>
-                        <span>00</span>
-                        <p>Secondes</p>
-                    </div>
-                </div>
+            <div class="countdown-item">
+                <span>00</span>
+                <p>Heures</p>
             </div>
-        </section>
+            <div class="countdown-item">
+                <span>00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="countdown-item">
+                <span>00</span>
+                <p>Secondes</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- chiffre clés -->
+<section id="chiffres">
+    <h2>L'impact d'AfriConnect en chiffres</h2>
+    
+    <div class="stats-grid">
+        <!-- Statistique 1 -->
+        <div class="stat-card">
+            <span>+1200</span>
+            <p>Participants attendus</p>
+        </div>
 
-        <section id="chiffres">
-            <h2>L'impact d'AfriConnect en chiffres</h2>
-            
-            <div>
-                <!-- Statistique 1 -->
-                <div>
-                    <span>+1200</span>
-                    <p>Participants attendus</p>
-                </div>
+        <!-- Statistique 2 -->
+        <div class="stat-card">
+            <span>48</span>
+            <p>Intervenants de haut niveau</p>
+        </div>
 
-                <!-- Statistique 2 -->
-                <div>
-                    <span>48</span>
-                    <p>Intervenants de haut niveau</p>
-                </div>
+        <!-- Statistique 3 -->
+        <div class="stat-card">
+            <span>3</span>
+            <p>Jours de conférences et workshops</p>
+        </div>
 
-                <!-- Statistique 3 -->
-                <div>
-                    <span>3</span>
-                    <p>Jours de conférences et workshops</p>
-                </div>
+        <!-- Statistique 4 -->
+        <div class="stat-card">
+            <span>12</span>
+            <p>Pays d'Afrique et du monde représentés</p>
+        </div>
+        
+    </div>
+</section>
 
-                <!-- Statistique 4 -->
-                <div>
-                    <span>12</span>
-                    <p>Pays d'Afrique et du monde représentés</p>
-                </div>
-            </div>
-        </section>
 
                 <!-- Pourquoi participer -->
                     <section id="pourquoi">
@@ -166,6 +171,7 @@
                 <a href="intervenants.html"><button type="button">Voir tous les intervenants</button></a>
             </div>
         </section>
+        
             <!-- Section sponsors et partenaires AfriConnect Summit -->
             <section id="sponsors">
     
@@ -173,7 +179,7 @@
     <p>Ils soutiennent l'innovation, le numérique et la connectivité sur le continent africain.</p>
 
     <!-- GOLD SPONSORS-->
-    <div>
+    <div class="gold">
         <h2>🥇 Sponsors Or</h2>
         <p>Partenaires officiels stratégiques de l'événement</p>
         
@@ -191,7 +197,7 @@
     </div>
 
     <!-- ARGENT SPONSORS -->
-    <div>
+    <div class="argent">
         <h2>🥈 Sponsors Argent</h2>
         <p>Acteurs clés du développement et de la croissance</p>
         
@@ -214,7 +220,7 @@
     </div>
 
     <!--  BRONZE SPONSORS -->
-    <div>
+    <div class="bronze">
         <h2>🥉 Sponsors Bronze</h2>
         <p>Startups, hubs technologiques et soutiens locaux</p>
         
@@ -246,39 +252,43 @@
         
     </main>
 
-<footer>
-    <div>
-        <!-- Colonne 1 -->
-        <div>
-            <h3>À Propos</h3>
-            <p>Nous créons des solutions web modernes, rapides et adaptées à vos besoins pour propulser votre activité.</p>
+    <!-- FOOTER -->
+    <footer class="pied-de-page">
+        <div class="conteneur-footer">
+            <!-- Colonne 1 -->
+            <div class="bloc-footer">
+                <h4>AfriConnect Summit</h4>
+                <p>Le carrefour de l'innovation et des esprits brillants façonné pour accélérer la transformation technologique africaine.</p>
+            </div>
+            
+            <!-- Colonne 2 -->
+            <div class="bloc-footer">
+                <h4>Liens Utiles</h4>
+                <ul>
+                   <li><a href="Index.html">accueil</a></li>
+                    <li><a href="Programme.html">Programme</a></li>
+                    <li><a href="Contact.html">Formulaire de Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Colonne 3 -->
+            <div class="bloc-footer">
+                <h4>Suivez l'Événement</h4>
+                <div class="liens-reseaux">
+                    <a href="https://youtube.com"><i class="bi bi-youtube"></i></a>
+                    <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
         </div>
+        
+        <div class="bas-footer">
+            <p>&copy; <span id="anneeDynamique"></span> AfriConnect Summit. Tous droits réservés.</p>
+        
+        </div>
+    </footer>
 
-        <!-- Colonne 2: Liens utiles -->
-        <div>
-            <h3>Liens Utiles</h3>
-            <ul>
-                <li><a href="Index.html">Accueil</a></li>
-                <li><a href="Programme.html">Services</a></li>
-                <li><a href="Index.html">Mentions Légales</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Colonne 3: Réseaux Sociaux -->
-        <div>
-            <h3>Suivez-nous</h3>
-            <ul>
-                <li><a href="https://facebook.com"><i class="bi bi-facebook"></i>Facebook</a></li>
-                <li><a href="https://x.com"><i class="bi bi-twitter"></i>X (Twitter)</a></li>
-                <li><a href="https://instagram.com"><i class="bi bi-instagram"></i>Instagram</a></li>
-            </ul>
-        </div>
-    </div>
-        <div>
-        <p>&copy; 2026 AfriConnectSummit. Tous droits réservés.</p>
-        </div>
-</footer>
+    
 
         <script src="js/main.js"></script>
 

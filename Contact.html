@@ -10,10 +10,18 @@
 <body>
     <header>
         <nav>
-            <!-- Logo -->
+             <!-- logo -->
+            <div class="header-logo-container">
             <a href="#">
+                <img  class="my-custom-logo" src="image/logo.png" alt="logo">
                 <strong>AfriConnect Summit 2026</strong>
             </a>
+            </div>
+            <button class="burger-menu" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul>
                 <li><a href="Index.html">Accueil</a></li>
                 <li><a href="Programme.html">programme</a></li>
@@ -22,39 +30,41 @@
             </ul>
         </nav>
     </header>
-    <!-- HERO INTERNE -->
-<div>
-    <h1>Contact &amp; Inscription</h1>
-    <p><a href="index.html">Accueil</a> &gt; Contact</p>
+
+   <!-- HERO INTERNE -->
+<div class="contact-hero-section">
+    <h1 class="contact-main-title">Contact &amp; Inscription</h1>
+    <p class="contact-subtitle"><a href="index.html" >Accueil</a> &gt; Contact</p>
 </div>
 
-<hr>
+
 
 <!-- FORMULAIRE D'INSCRIPTION ET INFORMATIONS -->
-<div>
+<div class="inscription-container">
     
-    <div>
+    <div class="inscription-form-col">
         <h2>Formulaire d'Inscription</h2>
         <form>
-            <div>
+            <div class="form-group">
                 <label for="nom-complet">Nom complet :</label>
                 <input type="text" id="nom-complet" required>
                 <span></span>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="email">Adresse email :</label>
                 <input type="email" id="email" required>
                 <span></span>
+
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="telephone">Téléphone :</label>
                 <input type="tel" id="telephone" required>
                 <span></span>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="participation">Type de participation :</label>
                 <select id="participation" required>
                     <option value="">-- Choisir une option --</option>
@@ -66,7 +76,7 @@
                 <span></span>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="pays">Pays africain :</label>
                 <select id="pays" required>
                     <option value="">-- Choisir un pays --</option>
@@ -84,14 +94,14 @@
                 <span></span>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="motivation">Message ou motivation (20 caractères minimum) :</label>
                 <textarea id="motivation" rows="5" required></textarea>
                 <span></span>
             </div>
 
-            <div>
-                <button type="submit">Envoyer l'inscription</button>
+            <div class="btn">
+                <button>Envoyer l'inscription</button>
             </div>
             
             <div></div>
@@ -99,62 +109,66 @@
     </div>
 
     <!--  Informations de contact -->
-    <div>
+    <div class="inscription-info-col">
         <h2>Informations utiles</h2>
-        <p><strong>Adresse :</strong> Centre des Congrès, Dakar, Sénégal</p>
+        <p><strong>Adresse :</strong> Centre Internationales  de Conférences Abdou Diouf (C.I.C.A.D) Dakar, Sénégal</p>
         <p><strong>Email :</strong> contact@africonnectsummit.com</p>
         <p><strong>Téléphone :</strong> +221 33 850 00 00</p>
         <p><strong>Horaires :</strong> 08h30 - 18h00</p>
     </div>
 </div>
+    <!-- CARTE GOOGLE MAPS -->
+<div>
+    <h2>Localisation de l'événement</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.8526325166886!2d-17.43536512591839!3d14.66430327551589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724ac8000c5d%3A0x9b4678e626f8da4c!2sPalais%20de%20la%20R%C3%A9publique!5e0!3m2!1sfr!2ssn!4v1777882593360!5m2!1sfr!2ssn" style="border:0; width:100%; height:450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
-<hr>
 
 <!-- FAQ EN ACCORDÉON -->
-<div>
+<div class="faq-section">
     <h2>Foire Aux Questions (FAQ)</h2>
 
     <!-- Question 1 -->
-    <div>
-        <input type="checkbox" id="faq-1">
-        <label for="faq-1"><strong>Comment obtenir mon badge d'accès ?</strong></label>
-        <div>
+    <div class="faq-item">
+        <input type="checkbox" id="faq-1" class="faq-toggle">
+        <label for="faq-1" class="faq-label"><strong>Comment obtenir mon badge d'accès ?</strong></label>
+        <div class="faq-content">
             <p>Votre badge électronique vous sera envoyé par email après validation de votre inscription. Vous pourrez l'imprimer ou le présenter sur votre téléphone à l'entrée.</p>
         </div>
     </div>
 
     <!-- Question 2 -->
-    <div>
-        <input type="checkbox" id="faq-2">
-        <label for="faq-2"><strong>Les repas sont-ils compris dans le billet ?</strong></label>
-        <div>
+    <div class="faq-item">
+        <input type="checkbox" id="faq-2" class="faq-toggle">
+        <label for="faq-2" class="faq-label"><strong>Les repas sont-ils compris dans le billet ?</strong></label>
+        <div class="faq-content">
             <p>Oui, l'accès aux buffets du midi et aux pauses-café est entièrement inclus pour tous les participants munis d'un billet valide.</p>
         </div>
     </div>
 
     <!-- Question 3 -->
-    <div>
-        <input type="checkbox" id="faq-3">
-        <label for="faq-3"><strong>Où se loger près du Centre des Congrès ?</strong></label>
-        <div>
+    <div class="faq-item">
+        <input type="checkbox" id="faq-3" class="faq-toggle">
+        <label for="faq-3" class="faq-label"><strong>Où se loger près du Centre des Congrès ?</strong></label>
+        <div class="faq-content">
             <p>Une liste d'hôtels partenaires situés à moins de 15 minutes du site sera envoyée à tous les inscrits avec des tarifs préférentiels.</p>
         </div>
     </div>
 
     <!-- Question 4 -->
-    <div>
-        <input type="checkbox" id="faq-4">
-        <label for="faq-4"><strong>L'événement est-il diffusé en ligne ?</strong></label>
-        <div>
+    <div class="faq-item">
+        <input type="checkbox" id="faq-4" class="faq-toggle">
+        <label for="faq-4" class="faq-label"><strong>L'événement est-il diffusé en ligne ?</strong></label>
+        <div class="faq-content">
             <p>Seules les conférences principales de l'Amphithéâtre Kédougou seront diffusées en direct pour les personnes inscrites au format virtuel.</p>
         </div>
     </div>
 
     <!-- Question 5 -->
-    <div>
-        <input type="checkbox" id="faq-5">
-        <label for="faq-5"><strong>Puis-je annuler ou transférer mon billet ?</strong></label>
-        <div>
+    <div class="faq-item">
+        <input type="checkbox" id="faq-5" class="faq-toggle">
+        <label for="faq-5" class="faq-label"><strong>Puis-je annuler ou transférer mon billet ?</strong></label>
+        <div class="faq-content">
             <p>Les annulations sont remboursables jusqu'à 30 jours avant l'événement. Le transfert de billet à un autre collègue est gratuit jusqu'à la veille du sommet.</p>
         </div>
     </div>
@@ -162,45 +176,45 @@
 
 <hr>
 
-<!-- CARTE GOOGLE MAPS -->
-<div>
-    <h2>Localisation de l'événement</h2>
-    <iframe src="https://maps.app.goo.gl/zTWGyDcsBxcfp8ZSA"></iframe>
-</div>
-<footer>
-    <div>
-        <!-- Colonne 1 -->
-        <div>
-            <h3>À Propos</h3>
-            <p>Nous créons des solutions web modernes, rapides et adaptées à vos besoins pour propulser votre activité.</p>
-        </div>
 
-        <!-- Colonne 2: Liens utiles -->
-        <div>
-            <h3>Liens Utiles</h3>
-            <ul>
-                <li><a href="Index.html">Accueil</a></li>
-                <li><a href="Programme.html">Services</a></li>
-                <li><a href="Index.html">Mentions Légales</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </div>
 
-        <!-- Colonne 3: Réseaux Sociaux -->
-        <div>
-            <h3>Suivez-nous</h3>
-            <ul>
-                <li><a href="https://facebook.com"><i class="bi bi-facebook"></i>Facebook</a></li>
-                <li><a href="https://x.com"><i class="bi bi-twitter"></i>X (Twitter)</a></li>
-                <li><a href="https://instagram.com"><i class="bi bi-instagram"></i>Instagram</a></li>
-            </ul>
+ <!-- FOOTER -->
+    <footer class="pied-de-page">
+        <div class="conteneur-footer">
+            <!-- Colonne 1 -->
+            <div class="bloc-footer">
+                <h4>AfriConnect Summit</h4>
+                <p>Le carrefour de l'innovation et des esprits brillants façonné pour accélérer la transformation technologique africaine.</p>
+            </div>
+            
+            <!-- Colonne 2 -->
+            <div class="bloc-footer">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a href="Index.html">accueil</a></li>
+                    <li><a href="Programme.html">Programme</a></li>
+                    <li><a href="Contact.html">Formulaire de Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Colonne 3 -->
+            <div class="bloc-footer">
+                <h4>Suivez l'Événement</h4>
+                <div class="liens-reseaux">
+                    <a href="https://youtube.com"><i class="bi bi-youtube"></i></a>
+                    <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-        <div>
-        <p>&copy; 2026 AfriConnectSummit. Tous droits réservés.</p>
+        
+        <div class="bas-footer">
+            <p>&copy; <span id="anneeDynamique"></span> AfriConnect Summit. Tous droits réservés.</p>
+        
         </div>
-</footer>
+    </footer>
 
+    <script src="js/main.js"></script>
         
 </body>
 </html>

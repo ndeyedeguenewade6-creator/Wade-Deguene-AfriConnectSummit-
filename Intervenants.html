@@ -10,10 +10,18 @@
 <body>
     <header>
         <nav>
-            <!-- Logo -->
+             <!-- logo -->
+            <div class="header-logo-container">
             <a href="#">
+                <img  class="my-custom-logo" src="image/logo.png" alt="logo">
                 <strong>AfriConnect Summit 2026</strong>
             </a>
+            </div>
+            <button class="burger-menu" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul>
                 <li><a href="Index.html">Accueil</a></li>
                 <li><a href="Programme.html">programme</a></li>
@@ -23,29 +31,31 @@
         </nav>
     </header>
     <!-- HERO INTERNE -->
-<div>
-    <h1>Nos Intervenants</h1>
-    <p><a href="index.html">Accueil</a> &gt; Intervenants</p>
+<div class="hero-interne-banniere">
+    <h1 class="hero-interne-titre">Nos Intervenants</h1>
+    <p class="hero-interne-fil-ariane">
+        <a href="index.html">Accueil</a> &gt; Intervenants
+    </p>
 </div>
+
 
 <hr>
 
 <!-- FILTRAGE DYNAMIQUE -->
-<div>
+<div class="filtre-container">
     <h2>Filtrer les experts</h2>
-    <ul>
-        <li><button>Tous</button></li>
-        <li><button>IA &amp; Tech</button></li>
-        <li><button>Business</button></li>
-        <li><button>Design</button></li>
-        <li><button>Data</button></li>
+    <ul class="filtre-liste">
+        <li><button class="filtre-btn actif">Tous</button></li>
+        <li><button class="filtre-btn">IA &amp; Tech</button></li>
+        <li><button class="filtre-btn">Business</button></li>
+        <li><button class="filtre-btn">Design</button></li>
+        <li><button class="filtre-btn">Data</button></li>
     </ul>
 </div>
 
-<hr>
 <main>
 <!-- GRILLE D'INTERVENANTS -->
-<div>
+<div class="intervenants-section">
     <!-- Intervenant 1 -->
     <div>
         <img src="image/intervenant5.jpg" alt="photo de amina">
@@ -119,39 +129,42 @@
     </div>
 </div>
 </main>
-    <footer>
-    <div>
-        <!-- Colonne 1 -->
-        <div>
-            <h3>À Propos</h3>
-            <p>Nous créons des solutions web modernes, rapides et adaptées à vos besoins pour propulser votre activité.</p>
-        </div>
-
-        <!-- Colonne 2: Liens utiles -->
-        <div>
-            <h3>Liens Utiles</h3>
-            <ul>
-                <li><a href="Index.html">Accueil</a></li>
-                <li><a href="Programme.html">Services</a></li>
-                <li><a href="Index.html">Mentions Légales</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Colonne 3: Réseaux Sociaux -->
-        <div>
-            <h3>Suivez-nous</h3>
-            <ul>
-                <li><a href="https://facebook.com"><i class="bi bi-facebook"></i>Facebook</a></li>
-                <li><a href="https://x.com"><i class="bi bi-twitter"></i>X (Twitter)</a></li>
-                <li><a href="https://instagram.com"><i class="bi bi-instagram"></i>Instagram</a></li>
-            </ul>
-        </div>
-    </div>
-        <div>
-        <p>&copy; 2026 AfriConnectSummit. Tous droits réservés.</p>
-        </div>
-</footer>
     
+ <!-- FOOTER -->
+    <footer class="pied-de-page">
+        <div class="conteneur-footer">
+            <!-- Colonne 1 -->
+            <div class="bloc-footer">
+                <h4>AfriConnect Summit</h4>
+                <p>Le carrefour de l'innovation et des esprits brillants façonné pour accélérer la transformation technologique africaine.</p>
+            </div>
+            
+            <!-- Colonne 2 -->
+            <div class="bloc-footer">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a href="Index.html">accueil</a></li>
+                    <li><a href="Programme.html">Programme</a></li>
+                    <li><a href="Contact.html">Formulaire de Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Colonne 3 -->
+            <div class="bloc-footer">
+                <h4>Suivez l'Événement</h4>
+                <div class="liens-reseaux">
+                    <a href="https://youtube.com"><i class="bi bi-youtube"></i></a>
+                    <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bas-footer">
+            <p>&copy; <span id="anneeDynamique"></span> AfriConnect Summit. Tous droits réservés.</p>
+        
+        </div>
+    </footer>
+            <script src="js/main.js"></script>
 </body>
 </html>

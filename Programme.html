@@ -38,19 +38,18 @@
 </div>
 
                 <!-- Planning -->
-
-<div>
-    <h2>Déroulement du Sommet</h2>
+<div id="section-planning">
+    <h2 class="titre-planning">Déroulement du Sommet</h2>
     
-    <!-- Liste des jours -->
-    <ul>
-        <li><a href="#jour1">Jour 1</a></li>
-        <li><a href="#jour2">Jour 2</a></li>
-        <li><a href="#jour3">Jour 3</a></li>
+    <!-- Liste des jours (Modifiée pour le contrôle en JavaScript) -->
+    <ul class="onglets-liste">
+        <li><button type="button" class="onglet-btn actif" data-target="jour1">Jour 1</button></li>
+        <li><button type="button" class="onglet-btn" data-target="jour2">Jour 2</button></li>
+        <li><button type="button" class="onglet-btn" data-target="jour3">Jour 3</button></li>
     </ul>
 
     <!-- PLANNING JOUR 1 -->
-    <div id="jour1">
+    <div id="jour1" class="planning-contenu actif">
         <h3>Planning - Jour 1</h3>
         <table>
             <thead>
@@ -96,10 +95,8 @@
         </table>
     </div>
 
-    <br>
-
     <!-- PLANNING JOUR 2 -->
-    <div id="jour2">
+    <div id="jour2" class="planning-contenu">
         <h3>Planning - Jour 2</h3>
         <table>
             <thead>
@@ -145,10 +142,8 @@
         </table>
     </div>
 
-    <br>
-
     <!-- PLANNING JOUR 3 -->
-    <div id="jour3">
+    <div id="jour3" class="planning-contenu">
         <h3>Planning - Jour 3</h3>
         <table>
             <thead>

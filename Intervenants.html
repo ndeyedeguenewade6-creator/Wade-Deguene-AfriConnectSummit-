@@ -28,6 +28,9 @@
                 <li><a href="Intervenants.html">Intervenants</a></li>
                 <li><a href="Contact.html">contact</a></li>
             </ul>
+            <button id="theme-toggle" class="btn-theme-switch" aria-label="Changer de thème">
+    <span class="theme-switch-circle">☀️</span>
+</button>
         </nav>
     </header>
     <!-- HERO INTERNE -->
@@ -166,5 +169,11 @@
         </div>
     </footer>
             <script src="js/main.js"></script>
+            <script>
+    const themeSauvegarde = localStorage.getItem("theme") || "dark";
+    document.documentElement.setAttribute("data-theme", themeSauvegarde);
+</script>
+<button id="back-to-top" class="back-to-top-btn" aria-label="Retour en haut">⬆️</button>
+
 </body>
 </html>
